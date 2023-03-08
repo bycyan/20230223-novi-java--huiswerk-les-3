@@ -1,8 +1,18 @@
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+
+            Set<Integer> randomSet = Bonus.randomNumberGenerator();
+            StringBuilder sb = new StringBuilder();
+            for (int number : randomSet) {
+                sb.append(number);
+            }
+            Bonus.processHash(sb);
+            System.out.println("Random ints to string: "+ sb.toString()); // prints the processed string
 
         //Variables
         boolean play = true;
@@ -31,6 +41,7 @@ public class Main {
                 scanner.nextLine();
 
                 //Nested
+//                if (inputGrade != sb.compareTo(sb))
                 if (inputGrade < 10) {
                     String result = translator.Translate(inputGrade);
                     //Get Translate from Translator
