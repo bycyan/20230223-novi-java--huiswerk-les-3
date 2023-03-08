@@ -6,6 +6,26 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
+         /*
+     Deze methode is voor de bonus opdracht.
+     */
+//        public static void feedback(String stringnumber) {
+//            //Objects, Imports
+//            Translator translator = new Translator(numeric, alphabetic);
+//            Scanner scanner = new Scanner(System.in);
+//            StringBuilder feedback = new StringBuilder();
+//            System.out.println("take a guess");
+//            String guess = scanner.nextLine();
+//            if (Objects.equals(guess, stringnumber)) {
+//                System.out.println("gefeliciteerd je hebt het goed");
+//            } else {
+//                for (int i = 0; i < 4; i++) {
+//                    if (guess.substring(i, i + 1).equals(stringnumber.substring(i, i + 1))) {
+//                        feedback.append("+");
+//                    } else if (stringnumber.contains(guess.substring(i, i + 1))) {
+//                        feedback.append("0");
+
+
             Set<Integer> randomSet = Bonus.randomNumberGenerator();
             StringBuilder sb = new StringBuilder();
             for (int number : randomSet) {
